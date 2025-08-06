@@ -25,4 +25,4 @@ app = workflow.compile()
 
 if __name__ == "__main__":
     final_state = app.invoke({"messages": []})
-    print(final_state)
+    print(final_state["response"].content)
